@@ -27,12 +27,14 @@ body {
 .flipbook {
   position: relative;
   width: 100%;
-  aspect-ratio: 1.414 / 1;
   transform-style: preserve-3d;
+  transition: height .5s ease;
 }
 .poster {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   background: radial-gradient(130% 120% at 50% 0%, #FEF9F1 0%, var(--cream) 45%, var(--cream-deep) 100%);
   padding: 40px 54px 34px;
   box-shadow: 0 22px 55px rgba(90, 74, 68, 0.26);
