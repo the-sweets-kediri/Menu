@@ -107,7 +107,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   transition: background .2s, color .2s, opacity .2s;
   font-family: Georgia, serif;
 }
