@@ -4,6 +4,11 @@
   var prevBtn = document.getElementById('prev');
   var nextBtn = document.getElementById('next');
   var dots = Array.prototype.slice.call(document.querySelectorAll('.pd'));
+  var fb = document.getElementById('flipbook');
+function setHeight() { fb.style.height = pages[cur].offsetHeight + 'px'; }
+window.addEventListener('load', setHeight);
+window.addEventListener('resize', setHeight);
+
 
   function sync() {
     prevBtn.disabled = (cur === 0);
